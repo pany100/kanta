@@ -25,6 +25,14 @@ if(isset($_POST['submitted'])) {
 	} else {
 		$email = trim($_POST['email']);
 	}
+
+	// we need at least some content
+	if(trim($_POST['phone']) === '') {
+		$phoneError = 'You forgot to add your phone!';
+		$hasError = true;
+	} else {
+		$phone = trim($_POST['phone']);
+	}
 		
 	// we need at least some content
 	if(trim($_POST['comments']) === '') {
