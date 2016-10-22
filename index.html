@@ -76,7 +76,7 @@
 				</div>
 				
 				<div id="site-nav" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
+					<ul class="nav navbar-nav navbar-right black-hover">
 						<li>
 							<a href="#nosotros" class="scrollto">Nosotros</a>
 						</li>
@@ -94,6 +94,9 @@
 						</li>
 						<li>
 							<a href="#contacto" class="scrollto">Contacto</a>
+						</li>
+						<li class="disabled mute">
+							<i class="fa fa-volume-up toggleSound" aria-hidden="true"></i>
 						</li>
 					</ul>
 				</div><!--End navbar-collapse -->
@@ -900,6 +903,18 @@
 	        $(document).ready(function(){
 	            $("a[rel^='prettyPhoto']").prettyPhoto({
 	                social_tools: false
+	            });
+	            $(".toggleSound").click(function(event){
+	            	var $icon = $(this);
+	            	if ($icon.hasClass('fa-volume-up')) {
+	            		$icon.removeClass('fa-volume-up');
+	            		$icon.addClass('fa-volume-off');
+	            		$("audio").prop('muted', true);
+	            	} else {
+	            		$icon.removeClass('fa-volume-off');
+	            		$icon.addClass('fa-volume-up');
+	            		$("audio").prop('muted', false);
+	            	}
 	            });
 	        });
 	    </script>
