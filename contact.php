@@ -1,7 +1,6 @@
 <?php 
-$emailTo = 'mail@example.com';
-$siteTitle = 'Your Site Title';
-
+$emailTo = 'pany100@gmail.com';
+$siteTitle = 'kantohogar';
 error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
 
 //If the form is submitted
@@ -9,7 +8,7 @@ if(isset($_POST['submitted'])) {
 	
 	// require a name from user
 	if(trim($_POST['contactName']) === '') {
-		$nameError =  'Forgot your name!'; 
+		$nameError =  'Has olvidado tu nombre.'; 
 		$hasError = true;
 	} else {
 		$name = trim($_POST['contactName']);
@@ -17,10 +16,10 @@ if(isset($_POST['submitted'])) {
 	
 	// need valid email
 	if(trim($_POST['email']) === '')  {
-		$emailError = 'Forgot to enter in your e-mail address.';
+		$emailError = 'Olvidaste poner tu correo electrónico.';
 		$hasError = true;
 	} else if (!preg_match("/^[[:alnum:]][a-z0-9_.-]*@[a-z0-9.-]+\.[a-z]{2,4}$/i", trim($_POST['email']))) {
-		$emailError = 'You entered an invalid email address.';
+		$emailError = 'El correo electrónico que agregaste es inválido.';
 		$hasError = true;
 	} else {
 		$email = trim($_POST['email']);
@@ -28,7 +27,7 @@ if(isset($_POST['submitted'])) {
 
 	// we need at least some content
 	if(trim($_POST['phone']) === '') {
-		$phoneError = 'You forgot to add your phone!';
+		$phoneError = 'Olvidaste agregar tu teléfono.';
 		$hasError = true;
 	} else {
 		$phone = trim($_POST['phone']);
@@ -36,7 +35,7 @@ if(isset($_POST['submitted'])) {
 		
 	// we need at least some content
 	if(trim($_POST['comments']) === '') {
-		$commentError = 'You forgot to enter a message!';
+		$commentError = 'Olvidaste poner tu mensaje.';
 		$hasError = true;
 	} else {
 		if(function_exists('stripslashes')) {
@@ -49,21 +48,14 @@ if(isset($_POST['submitted'])) {
 	// upon no failure errors let's email now!
 	if(!isset($hasError)) {
 		
-		$subject = 'New message to '.$siteTitle.' from '.$name;
+		$subject = 'Nuevo mensaje para '.$siteTitle.' de '.$name;
 		$sendCopy = trim($_POST['sendCopy']);
-		$body = "Name: $name \n\nEmail: $email \n\nMessage: $comments";
+		$body = "Nombre: $name \n\nEmail: $email \n\nMensaje: $comments";
 		$headers = 'From: ' .' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
 
 		mail($emailTo, $subject, $body, $headers);
 		
-        //Autorespond
-		$respondSubject = 'This is a sample auto response from '.$siteTitle;
-		$respondBody = "Your message to $siteTitle has been delivered!";
-		$respondHeaders = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
-		
-		mail($email, $respondSubject, $respondBody, $respondHeaders);
-		
-        // set our boolean completion value to TRUE
+		// set our boolean completion value to TRUE
 		$emailSent = true;
 	}
 }
