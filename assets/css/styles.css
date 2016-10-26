@@ -284,6 +284,10 @@ a:focus,
     background:#fff;
 }
 
+.light-green-bg {
+    background-color: #0fc;
+}
+
 .white-bg + .gray-bg,
 .gray-bg + .white-bg {
     border-top:1px solid #c3c3c3;
@@ -1375,7 +1379,6 @@ textarea.form-control {
 ------------------------*/    
 
 #main-footer {
-    background:#AAA;
     padding-bottom: 30px;
 }
 
