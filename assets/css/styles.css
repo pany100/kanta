@@ -285,7 +285,7 @@ a:focus,
 }
 
 .light-green-bg {
-    background-color: #0fc;
+    background-color: #28d8ac;
 }
 
 .white-bg + .gray-bg,
@@ -1390,7 +1390,6 @@ textarea.form-control {
     list-style:none;
     padding:0;
     padding: 40px 0 0;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 #main-footer .social-links li{
