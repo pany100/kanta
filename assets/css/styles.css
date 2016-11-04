@@ -1758,3 +1758,34 @@ textarea.form-control {
     text-transform: uppercase;
     transition: color 0.2s ease-out 0s;
 }
+
+
+
+
+
+.intro {
+    background-color: #000000;
+    background-size: cover;
+    color: #ffffff;
+    display: table;
+    height: auto;
+    text-align: center;
+    width: 100%;
+}
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+}
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+.carousel, .item, .active {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+
