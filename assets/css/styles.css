@@ -1783,6 +1783,12 @@ textarea.form-control {
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
+header .carousel-inner .item {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .carousel, .item, .active {
     height: 100%;
 }
