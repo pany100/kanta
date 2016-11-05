@@ -262,19 +262,18 @@ a:focus,
 
 .white-bg{
     background:#fff;
-    background:#000;
 }
 
 .gray-bg{
-    background:#f1f2f5;
+    background: rgb(51, 51, 0);
 }
 
 .color-bg{
-    background:#DF451A;
+    background: rgb(102, 0, 102);
 }
 
 .dark-bg{
-    background:#4E5961;
+    background: rgb(0, 0, 0);
 }
 
 .light-typo {
@@ -1801,11 +1800,23 @@ header .carousel-inner .item {
     left: 5%;
     position: absolute;
     text-align: center;
-    top: 15%;
+    top: 15%;   
     width: 90%;
     z-index: 2;
 }
 
 .absolute-logo .logo {
     height: 120px;
+}
+
+.text-blue {
+    color: rgb(51, 51, 204) !important;
+}
+
+.text-pink {
+    color: rgb(255, 0, 102) !important;
+}
+
+.text-orange {
+    color: rgb(255, 51, 0) !important;
 }
