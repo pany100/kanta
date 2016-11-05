@@ -1768,9 +1768,10 @@ textarea.form-control {
     background-size: cover;
     color: #ffffff;
     display: table;
-    height: auto;
+    height: 100%;
     text-align: center;
     width: 100%;
+    position: relative;
 }
 .intro .intro-body {
     display: table-cell;
