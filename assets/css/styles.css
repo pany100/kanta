@@ -507,7 +507,7 @@ a:focus,
     display: table;
     height: 100%;
     width:100%;
-    padding: 150px 0;
+    padding: 100px 0;
     margin-bottom:0;
     position: relative;
     color:#fff;
@@ -1796,3 +1796,15 @@ header .carousel-inner .item {
     height: 100%;
 }
 
+.absolute-logo {
+    left: 5%;
+    position: absolute;
+    text-align: center;
+    top: 15%;
+    width: 90%;
+    z-index: 2;
+}
+
+.absolute-logo .logo {
+    height: 120px;
+}
