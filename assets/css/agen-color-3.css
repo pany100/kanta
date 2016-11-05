@@ -57,3 +57,6 @@ a:focus,
 .btn.transparent:focus{
     border-color:#00AB66;
 }
+body {
+	background: black;
+}
