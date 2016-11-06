@@ -1809,6 +1809,50 @@ header .carousel-inner .item {
     height: 120px;
 }
 
+.pink-bg {
+    background-color: rgb(255, 0, 102) !important;
+}
+
+.orange-bg {
+    background-color: rgb(255, 51, 0) !important;
+}
+
+.blue-bg {
+    background-color: rgb(51, 51, 204) !important;
+}
+
+.cyan-bg {
+    background-color: #00F5FF !important;
+}
+
+.red-bg {
+    background-color: rgb(255,0,0) !important;
+}
+
+.green-bg {
+    background-color: rgb(0, 175, 0) !important;
+}
+
+.text-gray {
+    color: rgb(51, 51, 0) !important;
+}
+
+.text-green {
+    color: rgb(0, 255, 0) !important;
+}
+
+.text-red {
+    color: rgb(255, 0, 0) !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
 .text-blue {
     color: rgb(51, 51, 204) !important;
 }
