@@ -260,6 +260,10 @@ a:focus,
 ----- Colors -----
 ------------------*/
 
+.black-bg{
+    background:#000;
+}
+
 .white-bg{
     background:#fff;
 }
@@ -794,7 +798,6 @@ a:focus,
 -------------------------*/
 
 #portfolio{
-    background:#fff;
     color:#313131;
 }
 
@@ -1857,10 +1860,19 @@ header .carousel-inner .item {
     color: rgb(51, 51, 204) !important;
 }
 
+.text-lightblue {
+    color: rgb(153, 153, 255) !important;
+    text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
 .text-pink {
     color: rgb(255, 0, 102) !important;
 }
 
 .text-orange {
     color: rgb(255, 51, 0) !important;
+}
+
+.text-yellow {
+    color: rgb(240,230,140) !important;
 }
