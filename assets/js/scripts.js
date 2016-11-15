@@ -423,6 +423,7 @@ $(document).ready(function() {
 			var formInput = $(this).serialize();
 			$.post($(this).attr('action'),formInput, function(data){
 				$('#contact-form button').html('<i class="fa fa-check"></i>'+okMessage);
+				alert("Su mensaje ha sido enviado satisfactoriamente. ¡Le responderemos a la brevedad!");
 				setTimeout(function(){
 					$('#contact-form button').html(buttonCopy);
 				$('#contact-form').removeClass('clicked');
